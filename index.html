@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents with Story Protocol ATCP/IP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h2 class="m-0">AI Agents + ATCP/IP</h2>
+            </div>
+            <ul class="navbar-nav">
+                <li><a href="#overview" class="nav-link active" data-section="overview">Overview</a></li>
+                <li><a href="#use-cases" class="nav-link" data-section="use-cases">Use Cases</a></li>
+                <li><a href="#implementation" class="nav-link" data-section="implementation">Guide</a></li>
+                <li><a href="#frameworks" class="nav-link" data-section="frameworks">Frameworks</a></li>
+                <li><a href="#generator" class="nav-link" data-section="generator">Code Gen</a></li>
+                <li><a href="#simulation" class="nav-link" data-section="simulation">Simulation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Overview Dashboard -->
+        <section id="overview" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h1>AI Agents with Story Protocol ATCP/IP</h1>
+                    <p class="hero-description">Build autonomous agents that exchange, license, and leverage intellectual property using blockchain infrastructure</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Autonomous IP Transactions</h3>
+                        <p>AI agents automatically negotiate and execute IP licensing agreements</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Transparent Revenue</h3>
+                        <p>Blockchain-based royalty distribution with full transparency</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Framework Integration</h3>
+                        <p>Easy integration with popular agent frameworks like Eliza, GOAT, LangChain</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Decentralized Marketplace</h3>
+                        <p>Built-in marketplace functionality for IP discovery and trading</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Legal Enforceability</h3>
+                        <p>Programmable IP licenses with legal backing</p>
+                    </div>
+                </div>
+
+                <div class="architecture-section">
+                    <h2>ATCP/IP Architecture</h2>
+                    <div class="architecture-image">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748847944/pplx_code_interpreter/eb5f1628_z4nhcb.jpg" alt="AI Agents ATCP/IP Implementation Architecture" class="architecture-diagram">
+                    </div>
+                </div>
+
+                <div class="roadmap-section">
+                    <h2>Implementation Roadmap</h2>
+                    <div class="roadmap-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">1</div>
+                            <div class="timeline-content">
+                                <h4>Setup & Registration</h4>
+                                <p>1-2 weeks</p>
+                                <span class="timeline-status">Start Here</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">2</div>
+                            <div class="timeline-content">
+                                <h4>ATCP/IP Integration</h4>
+                                <p>2-3 weeks</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">3</div>
+                            <div class="timeline-content">
+                                <h4>Framework Integration</h4>
+                                <p>2-4 weeks</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">4</div>
+                            <div class="timeline-content">
+                                <h4>Advanced Features</h4>
+                                <p>3-4 weeks</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">5</div>
+                            <div class="timeline-content">
+                                <h4>Testing & Validation</h4>
+                                <p>2-3 weeks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Explorer -->
+        <section id="use-cases" class="section">
+            <div class="container">
+                <h1>Use Cases Explorer</h1>
+                <p>Discover different applications for AI agents with ATCP/IP infrastructure</p>
+                
+                <div class="use-cases-grid">
+                    <div class="use-case-card" data-use-case="creative_ip">
+                        <div class="use-case-header">
+                            <h3>Creative IP Exchange</h3>
+                            <span class="complexity-badge beginner">Beginner</span>
+                        </div>
+                        <p>AI agents generating and trading creative content</p>
+                        <div class="use-case-details">
+                            <div class="detail-item">
+                                <strong>Example:</strong> DALL-E agent licensing generated images to content creators
+                            </div>
+                            <div class="detail-item">
+                                <strong>Revenue Model:</strong> Per-use licensing + royalties
+                            </div>
+                            <div class="detail-item">
+                                <strong>Timeline:</strong> 2-4 weeks
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" onclick="expandUseCase('creative_ip')">Learn More</button>
+                    </div>
+
+                    <div class="use-case-card" data-use-case="training_data">
+                        <div class="use-case-header">
+                            <h3>Training Data Marketplace</h3>
+                            <span class="complexity-badge intermediate">Intermediate</span>
+                        </div>
+                        <p>Agents trading high-quality training datasets</p>
+                        <div class="use-case-details">
+                            <div class="detail-item">
+                                <strong>Example:</strong> Language models sharing specialized training data
+                            </div>
+                            <div class="detail-item">
+                                <strong>Revenue Model:</strong> Subscription + usage-based
+                            </div>
+                            <div class="detail-item">
+                                <strong>Timeline:</strong> 4-6 weeks
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" onclick="expandUseCase('training_data')">Learn More</button>
+                    </div>
+
+                    <div class="use-case-card" data-use-case="algorithm_licensing">
+                        <div class="use-case-header">
+                            <h3>Algorithm Licensing</h3>
+                            <span class="complexity-badge advanced">Advanced</span>
+                        </div>
+                        <p>AI agents licensing proprietary algorithms</p>
+                        <div class="use-case-details">
+                            <div class="detail-item">
+                                <strong>Example:</strong> Trading algorithms sharing strategies with hedge funds
+                            </div>
+                            <div class="detail-item">
+                                <strong>Revenue Model:</strong> Performance-based royalties
+                            </div>
+                            <div class="detail-item">
+                                <strong>Timeline:</strong> 6-8 weeks
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" onclick="expandUseCase('algorithm_licensing')">Learn More</button>
+                    </div>
+
+                    <div class="use-case-card" data-use-case="research_collaboration">
+                        <div class="use-case-header">
+                            <h3>Research Collaboration</h3>
+                            <span class="complexity-badge intermediate">Intermediate</span>
+                        </div>
+                        <p>Academic AI agents sharing research outputs</p>
+                        <div class="use-case-details">
+                            <div class="detail-item">
+                                <strong>Example:</strong> Research agents collaborating on scientific papers
+                            </div>
+                            <div class="detail-item">
+                                <strong>Revenue Model:</strong> Citation-based + grant sharing
+                            </div>
+                            <div class="detail-item">
+                                <strong>Timeline:</strong> 4-6 weeks
+                            </div>
+                        </div>
+                        <button class="btn btn--primary" onclick="expandUseCase('research_collaboration')">Learn More</button>
+                    </div>
+                </div>
+
+                <div id="use-case-modal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 id="modal-title"></h2>
+                            <button class="modal-close" onclick="closeUseCase()">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="modal-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Guide -->
+        <section id="implementation" class="section">
+            <div class="container">
+                <h1>Implementation Guide</h1>
+                <p>Step-by-step walkthrough to build your AI agent with ATCP/IP</p>
+
+                <div class="progress-tracker">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-text">Phase 1 of 5: Setup & Registration</div>
+                </div>
+
+                <div class="phases-container">
+                    <div class="phase-card active" data-phase="1">
+                        <div class="phase-header">
+                            <h3>Phase 1: Setup & Registration</h3>
+                            <span class="phase-duration">1-2 weeks</span>
+                        </div>
+                        <p>Set up development environment and register agent as IP</p>
+                        <div class="tasks-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task-1-1">
+                                <label for="task-1-1">Install Story Protocol SDK</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-1-2">
+                                <label for="task-1-2">Choose agent framework (Eliza, GOAT, LangChain, etc.)</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-1-3">
+                                <label for="task-1-3">Set up wallet architecture with TEE</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-1-4">
+                                <label for="task-1-4">Register agent as IP asset on Story Protocol</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-1-5">
+                                <label for="task-1-5">Implement IP metadata following IPA standard</label>
+                            </div>
+                        </div>
+                        <div class="deliverables">
+                            <h4>Deliverables:</h4>
+                            <ul>
+                                <li>Working development environment</li>
+                                <li>Agent registered as IP asset</li>
+                                <li>Basic agent functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card" data-phase="2">
+                        <div class="phase-header">
+                            <h3>Phase 2: ATCP/IP Integration</h3>
+                            <span class="phase-duration">2-3 weeks</span>
+                        </div>
+                        <p>Implement core ATCP/IP transaction capabilities</p>
+                        <div class="tasks-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task-2-1">
+                                <label for="task-2-1">Build agent discovery mechanisms</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-2-2">
+                                <label for="task-2-2">Implement negotiation logic for IP agreements</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-2-3">
+                                <label for="task-2-3">Create and attach agreement terms to IP assets</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-2-4">
+                                <label for="task-2-4">Integrate license token minting</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-2-5">
+                                <label for="task-2-5">Set up automated revenue claiming</label>
+                            </div>
+                        </div>
+                        <div class="deliverables">
+                            <h4>Deliverables:</h4>
+                            <ul>
+                                <li>Agent-to-agent communication</li>
+                                <li>License minting capability</li>
+                                <li>Revenue distribution system</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card" data-phase="3">
+                        <div class="phase-header">
+                            <h3>Phase 3: Framework Integration</h3>
+                            <span class="phase-duration">2-4 weeks</span>
+                        </div>
+                        <p>Build plugins and integrations for agent frameworks</p>
+                        <div class="tasks-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task-3-1">
+                                <label for="task-3-1">Create framework-specific plugins</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-3-2">
+                                <label for="task-3-2">Implement MCP server integration</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-3-3">
+                                <label for="task-3-3">Build multi-agent communication protocols</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-3-4">
+                                <label for="task-3-4">Add security and compliance features</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-3-5">
+                                <label for="task-3-5">Test inter-framework compatibility</label>
+                            </div>
+                        </div>
+                        <div class="deliverables">
+                            <h4>Deliverables:</h4>
+                            <ul>
+                                <li>Framework plugins</li>
+                                <li>Multi-agent scenarios</li>
+                                <li>Security implementations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card" data-phase="4">
+                        <div class="phase-header">
+                            <h3>Phase 4: Advanced Features</h3>
+                            <span class="phase-duration">3-4 weeks</span>
+                        </div>
+                        <p>Add marketplace and production features</p>
+                        <div class="tasks-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task-4-1">
+                                <label for="task-4-1">Build agent marketplace functionality</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-4-2">
+                                <label for="task-4-2">Implement complex negotiation simulations</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-4-3">
+                                <label for="task-4-3">Add analytics and monitoring tools</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-4-4">
+                                <label for="task-4-4">Create user interfaces and dashboards</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-4-5">
+                                <label for="task-4-5">Optimize for production deployment</label>
+                            </div>
+                        </div>
+                        <div class="deliverables">
+                            <h4>Deliverables:</h4>
+                            <ul>
+                                <li>Marketplace interface</li>
+                                <li>Analytics dashboard</li>
+                                <li>Production-ready system</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="phase-card" data-phase="5">
+                        <div class="phase-header">
+                            <h3>Phase 5: Testing & Validation</h3>
+                            <span class="phase-duration">2-3 weeks</span>
+                        </div>
+                        <p>Comprehensive testing and optimization</p>
+                        <div class="tasks-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task-5-1">
+                                <label for="task-5-1">End-to-end agent scenario testing</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-5-2">
+                                <label for="task-5-2">Performance optimization</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-5-3">
+                                <label for="task-5-3">Security auditing</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-5-4">
+                                <label for="task-5-4">User acceptance testing</label>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task-5-5">
+                                <label for="task-5-5">Documentation and deployment</label>
+                            </div>
+                        </div>
+                        <div class="deliverables">
+                            <h4>Deliverables:</h4>
+                            <ul>
+                                <li>Test suite</li>
+                                <li>Performance benchmarks</li>
+                                <li>Security audit</li>
+                                <li>Production deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phase-navigation">
+                    <button class="btn btn--secondary" id="prev-phase" onclick="previousPhase()">Previous Phase</button>
+                    <button class="btn btn--primary" id="next-phase" onclick="nextPhase()">Next Phase</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Framework Integration -->
+        <section id="frameworks" class="section">
+            <div class="container">
+                <h1>Framework Integration</h1>
+                <p>Choose and integrate with popular AI agent frameworks</p>
+
+                <div class="frameworks-grid">
+                    <div class="framework-card" data-framework="eliza">
+                        <div class="framework-header">
+                            <h3>Eliza</h3>
+                            <span class="complexity-badge medium">Medium</span>
+                        </div>
+                        <p>ai16z DAO framework with social media capabilities</p>
+                        <div class="framework-strengths">
+                            <h4>Strengths:</h4>
+                            <ul>
+                                <li>Twitter integration</li>
+                                <li>Social agents</li>
+                                <li>Community-driven</li>
+                            </ul>
+                        </div>
+                        <div class="framework-use-cases">
+                            <h4>Best for:</h4>
+                            <span>Social media agents, Community management, Content creation</span>
+                        </div>
+                        <button class="btn btn--primary" onclick="selectFramework('eliza')">Select Framework</button>
+                    </div>
+
+                    <div class="framework-card" data-framework="goat">
+                        <div class="framework-header">
+                            <h3>GOAT</h3>
+                            <span class="complexity-badge low">Low</span>
+                        </div>
+                        <p>Crossmint's blockchain action framework</p>
+                        <div class="framework-strengths">
+                            <h4>Strengths:</h4>
+                            <ul>
+                                <li>Multi-chain support</li>
+                                <li>30+ blockchains</li>
+                                <li>Web3 integration</li>
+                            </ul>
+                        </div>
+                        <div class="framework-use-cases">
+                            <h4>Best for:</h4>
+                            <span>DeFi agents, Cross-chain operations, Wallet management</span>
+                        </div>
+                        <button class="btn btn--primary" onclick="selectFramework('goat')">Select Framework</button>
+                    </div>
+
+                    <div class="framework-card" data-framework="langchain">
+                        <div class="framework-header">
+                            <h3>LangChain</h3>
+                            <span class="complexity-badge low">Low</span>
+                        </div>
+                        <p>Popular LLM application development framework</p>
+                        <div class="framework-strengths">
+                            <h4>Strengths:</h4>
+                            <ul>
+                                <li>Large community</li>
+                                <li>Extensive tools</li>
+                                <li>Well documented</li>
+                            </ul>
+                        </div>
+                        <div class="framework-use-cases">
+                            <h4>Best for:</h4>
+                            <span>General purpose agents, Data processing, Complex workflows</span>
+                        </div>
+                        <button class="btn btn--primary" onclick="selectFramework('langchain')">Select Framework</button>
+                    </div>
+
+                    <div class="framework-card" data-framework="autogen">
+                        <div class="framework-header">
+                            <h3>AutoGen</h3>
+                            <span class="complexity-badge medium">Medium</span>
+                        </div>
+                        <p>Microsoft's multi-agent conversation framework</p>
+                        <div class="framework-strengths">
+                            <h4>Strengths:</h4>
+                            <ul>
+                                <li>Multi-agent conversations</li>
+                                <li>Microsoft backing</li>
+                                <li>Enterprise ready</li>
+                            </ul>
+                        </div>
+                        <div class="framework-use-cases">
+                            <h4>Best for:</h4>
+                            <span>Team collaboration, Enterprise agents, Complex negotiations</span>
+                        </div>
+                        <button class="btn btn--primary" onclick="selectFramework('autogen')">Select Framework</button>
+                    </div>
+
+                    <div class="framework-card" data-framework="crewai">
+                        <div class="framework-header">
+                            <h3>CrewAI</h3>
+                            <span class="complexity-badge medium">Medium</span>
+                        </div>
+                        <p>Multi-agent task execution framework</p>
+                        <div class="framework-strengths">
+                            <h4>Strengths:</h4>
+                            <ul>
+                                <li>Task orchestration</li>
+                                <li>Role-based agents</li>
+                                <li>Workflow management</li>
+                            </ul>
+                        </div>
+                        <div class="framework-use-cases">
+                            <h4>Best for:</h4>
+                            <span>Project management, Task automation, Workflow agents</span>
+                        </div>
+                        <button class="btn btn--primary" onclick="selectFramework('crewai')">Select Framework</button>
+                    </div>
+                </div>
+
+                <div id="framework-details" class="framework-details hidden">
+                    <h2>Integration Guide for <span id="selected-framework-name"></span></h2>
+                    <div id="framework-integration-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Generator -->
+        <section id="generator" class="section">
+            <div class="container">
+                <h1>Code Generator</h1>
+                <p>Generate boilerplate code for agent registration and licensing</p>
+
+                <div class="generator-form">
+                    <div class="form-group">
+                        <label class="form-label">Agent Name</label>
+                        <input type="text" class="form-control" id="agent-name" placeholder="My AI Trading Agent">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Agent Description</label>
+                        <textarea class="form-control" id="agent-description" placeholder="Description of your AI agent's capabilities"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Agent Type</label>
+                        <select class="form-control" id="agent-type">
+                            <option value="creative">Creative IP Agent</option>
+                            <option value="trading">Trading Algorithm Agent</option>
+                            <option value="research">Research Collaboration Agent</option>
+                            <option value="data">Training Data Agent</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Programming Language</label>
+                        <select class="form-control" id="programming-language">
+                            <option value="typescript">TypeScript</option>
+                            <option value="python">Python</option>
+                            <option value="javascript">JavaScript</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Framework</label>
+                        <select class="form-control" id="selected-framework">
+                            <option value="eliza">Eliza</option>
+                            <option value="goat">GOAT</option>
+                            <option value="langchain">LangChain</option>
+                            <option value="autogen">AutoGen</option>
+                            <option value="crewai">CrewAI</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn--primary" onclick="generateCode()">Generate Code</button>
+                </div>
+
+                <div id="generated-code" class="code-output hidden">
+                    <h3>Generated Code</h3>
+                    <div class="code-tabs">
+                        <button class="code-tab active" data-tab="registration">Agent Registration</button>
+                        <button class="code-tab" data-tab="licensing">License Creation</button>
+                        <button class="code-tab" data-tab="negotiation">Negotiation Logic</button>
+                    </div>
+                    <div class="code-content">
+                        <pre><code id="code-display"></code></pre>
+                    </div>
+                    <button class="btn btn--secondary" onclick="copyCode()">Copy Code</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulation Lab -->
+        <section id="simulation" class="section">
+            <div class="container">
+                <h1>Simulation Lab</h1>
+                <p>Demo environment showing agent-to-agent IP negotiations</p>
+
+                <div class="simulation-controls">
+                    <div class="form-group">
+                        <label class="form-label">Simulation Scenario</label>
+                        <select class="form-control" id="simulation-scenario">
+                            <option value="basic_licensing">Basic IP Licensing</option>
+                            <option value="multi_party">Multi-Party Research</option>
+                            <option value="marketplace">Algorithm Marketplace</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--primary" onclick="startSimulation()">Start Simulation</button>
+                    <button class="btn btn--secondary" onclick="resetSimulation()">Reset</button>
+                </div>
+
+                <div id="simulation-area" class="simulation-area">
+                    <div class="agents-container">
+                        <div class="agent-box" id="agent1">
+                            <h4>Agent 1</h4>
+                            <div class="agent-status">Waiting...</div>
+                            <div class="agent-messages"></div>
+                        </div>
+                        <div class="negotiation-flow">
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-status">Ready to negotiate</div>
+                            <div class="flow-arrow">←</div>
+                        </div>
+                        <div class="agent-box" id="agent2">
+                            <h4>Agent 2</h4>
+                            <div class="agent-status">Waiting...</div>
+                            <div class="agent-messages"></div>
+                        </div>
+                    </div>
+
+                    <div class="simulation-log">
+                        <h4>Simulation Log</h4>
+                        <div class="log-content" id="simulation-log"></div>
+                    </div>
+                </div>
+
+                <div class="simulation-results hidden" id="simulation-results">
+                    <h3>Simulation Complete</h3>
+                    <div class="results-content">
+                        <div class="result-item">
+                            <strong>License Agreement:</strong>
+                            <span id="license-terms"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Transaction Hash:</strong>
+                            <span id="transaction-hash"></span>
+                        </div>
+                        <div class="result-item">
+                            <strong>Revenue Split:</strong>
+                            <span id="revenue-split"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
